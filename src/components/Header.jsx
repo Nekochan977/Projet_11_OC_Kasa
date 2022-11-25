@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import homeBg from "../assets/home-background.png"
 import '../styles/Header.css';
@@ -25,8 +25,8 @@ function Header() {
           </ul>
         </nav>
       </div>
-      <div className="container-fluid">
-        <img src={homeBg} alt="Home background image"/>
+      <div className="container">
+        <img className="img-fluid max-width: 100% rounded" src={homeBg} alt="Home background"/>
       </div>
     </header>
     
