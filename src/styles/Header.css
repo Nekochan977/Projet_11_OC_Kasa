@@ -1,0 +1,8 @@
+.navigation {
+    list-style: none;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    color: rgb(252, 71, 78);
+}
