@@ -1,13 +1,14 @@
 import '../styles/App.css';
 import Header from './Header';
-import CardLink from './Card-link';
+import Home from '../pages/Home';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <CardLink />
+      <Home />
     </div>
   );
 }
