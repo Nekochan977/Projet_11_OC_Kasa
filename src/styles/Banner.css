@@ -1,0 +1,10 @@
+.banner-container {
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+}
+.banner-container img{
+   height: 15rem;
+   width: 100%;
+   object-fit: cover;
+}
