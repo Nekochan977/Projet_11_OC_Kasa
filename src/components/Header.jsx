@@ -6,11 +6,11 @@ function Header() {
   return (
     <header className="container">
       <div className="d-flex align-items-center container-fluid position-relative my-2">
-        <div className="my-4">
+        <div className="my-4 w-50 justify-content-start">
           <img src={logo} alt="kasa logo" />
         </div>
-        <nav className="navbar position-absolute end-0 justify-content-center">
-          <ul className="d-flex navigation">
+        <nav className="navbar position-absolute end-0 justify-content-end w-50">
+          <ul className="d-flex flex-wrap navigation">
             <li className="mx-5">
             <Link className="link" to="/">accueil</Link>
             </li>
