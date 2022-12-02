@@ -1,17 +1,13 @@
-import homeBg from "../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg"
-import aboutBg from"../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg"
 import '../styles/Banner.css';
 
 
-function Banner() {
-    console.log(window.location.pathname)
-    const path = window.location.pathname
-    const bgImages = [homeBg, aboutBg]
-    console.log(bgImages);
+function Banner(props) {
     return(
+        
         <div className="container banner-container mt-8">
-            {path==="/"? <img className="rounded" src={bgImages[0]}/> :  <img className="rounded" src={bgImages[1]}/>}
+            <img className="rounded" src={props.source} alt={props.altText}/>
         </div>
+
     )
 }
 
