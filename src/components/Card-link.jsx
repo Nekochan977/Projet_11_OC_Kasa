@@ -8,9 +8,9 @@ function CardLink() {
         {data.map((data) => {
           //console.log(data);
           return (
-            <div key={data.id} className="rounded bg-red-200 m-4  cover-card " >
-              <img className="thumbnail rounded position-relative bottom-0" src={data.cover} alt={data.title} />
-              <p className="position-absolute ">{data.title}</p>
+            <div key={data.id} className="rounded bg-red-200 m-4 position-relative cover-card " >
+              <img className="thumbnail rounded" src={data.cover} alt={data.title} />
+              <p className="position-absolute bottom-0 text-white font-weight-bold card-text p-2">{data.title}</p>
             </div>
           );
         })}
