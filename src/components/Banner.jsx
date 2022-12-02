@@ -9,7 +9,7 @@ function Banner() {
     const bgImages = [homeBg, aboutBg]
     console.log(bgImages);
     return(
-        <div className="container banner-container p-4 mt-8">
+        <div className="container banner-container mt-8">
             {path==="/"? <img className="rounded" src={bgImages[0]}/> :  <img className="rounded" src={bgImages[1]}/>}
         </div>
     )
