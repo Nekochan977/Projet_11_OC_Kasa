@@ -8,11 +8,11 @@ function CardLink() {
       <div className="container-fluid bg-light rounded d-flex flex-wrap justify-content-md-around my-5">
         {data.map((data) => {
           return (
-            <Link to={`/appartment/${data.id}`}>
-              <div
-                key={data.id}
-                className="rounded bg-red-200 m-4 position-relative cover-card "
-              >
+            <Link 
+              to={`/appartment/${data.id}`}
+              key={data.id}
+            >
+              <div className="rounded bg-red-200 m-4 position-relative cover-card ">
                 <img
                   className="thumbnail rounded"
                   src={data.cover}
