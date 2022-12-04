@@ -13,7 +13,7 @@ function About () {
             source={aboutBg}
             altText="paysage montagnes enneigées au printemps"
           />
-          <div className="container m-5">
+          <div className="container mt-5 justify-content-center">
             <Dropdown 
             type={"Fiabilité"}
             text={"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."}

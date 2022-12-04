@@ -9,13 +9,13 @@ function DropDown(props) {
     return (
       <div className="dropdown-container">
         <button
-          className="rounded dropdown-btn"
+          className="dropdown-btn"
           onClick={handleOpen}
         >
          {props.type}
         </button>
         {open ? <div className="dropdown-content">
-          <p className="text-dark">
+          <p className="p-4 rounded">
             {props.text}
           </p>
         </div>
