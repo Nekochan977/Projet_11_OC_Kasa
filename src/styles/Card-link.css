@@ -2,11 +2,10 @@
     width: 20rem;
     height: 20rem;
     object-fit: cover;
+    opacity: 0.5;
 }
 .cover-card{
     width: 20rem;
     height: 20rem;
-}
-.card-text {
-    text-shadow: 0 0 1em rgb(4, 4, 80), 0 0 0.2em rgb(6, 6, 72);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
