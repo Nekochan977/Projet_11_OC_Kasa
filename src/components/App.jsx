@@ -5,6 +5,7 @@ import About from '../pages/About'
 import Error from '../pages/Error'
 import { Routes, Route } from "react-router-dom"
 import Layout from './Layout'
+import Appartment from '../pages/Appartment'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="appartment/:appartmentId" element={<Appartment />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes> 
