@@ -15,9 +15,13 @@ function Appartment(){
         <Header />
         <main className="container">
           <Carousel>
-            {appartment.pictures.map((picture, index) => {
-              return <img className="carousel-img" key={index} src={picture} />;
-            })}
+            {appartment.pictures.map((picture, index) => (
+              <div className="image-txt-wraper">
+                <img className="carousel-img" key={index} src={picture} />
+                <p className="carousel-img-number">{index+1}/{appartment.pictures.length}</p>
+              </div>
+               
+            ))}
           </Carousel>
           <section>
             <div>

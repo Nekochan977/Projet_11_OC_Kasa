@@ -34,7 +34,7 @@ const prev = () => {
       {/* condition to hide the control button when not needed */}
         {currentIndex > 0 && (
           <button onClick={prev} className="left-arrow">
-            &lt;
+            <i class="fa-solid fa-chevron-left"></i>
           </button>
         )}
        
@@ -49,7 +49,7 @@ const prev = () => {
         {/* condition to hide the control button when not needed */}
         {currentIndex < length - 1 && (
           <button onClick={next} className="right-arrow">
-            &gt;
+            <i class="fa-solid fa-chevron-right"></i>
           </button>
         )}
        
