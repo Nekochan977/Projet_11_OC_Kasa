@@ -16,7 +16,8 @@ function Appartment(){
         <main className="container">
           <Carousel>
             {appartment.pictures.map((picture, index) => (
-              <div className="image-txt-wraper">
+              console.log(picture),
+              <div className="image-txt-wraper" key={index}>
                 <img className="carousel-img" key={index} src={picture} />
                 <p className="carousel-img-number">{index+1}/{appartment.pictures.length}</p>
               </div>
