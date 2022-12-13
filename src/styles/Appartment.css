@@ -7,11 +7,20 @@
   font-size: 2rem;
 }
 .host-info {
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   display: flex;
   align-items: center;
+  position: relative;
+  margin-left: auto;
+  font-size: 1.5rem;
 }
 .host-profile-img {
   border-radius: 50%;
   margin-left: 1.5rem;
+}
+
+.appartment-info{
+  position: relative;
+  margin-left: auto;
+  display: flex;
 }

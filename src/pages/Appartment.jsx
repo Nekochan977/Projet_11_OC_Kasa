@@ -20,13 +20,13 @@ function Appartment(){
             {appartment}
           </Carousel>
           <section>
-            <div>
+            <div className="appartment-info">
               <div className="appartment-header">
                 <h1 className="appartment-title">{appartment.title}</h1>
                 <p>{appartment.location}</p>
+                <Tags>{appartment}</Tags>
               </div>
-              <Tags>{appartment}</Tags>
-                
+              
               <div className="host-info">
                 <div>
                   <p>{appartment.host.name}</p>
@@ -36,9 +36,9 @@ function Appartment(){
                   src={appartment.host.picture}
                 />
               </div>
-            </div>
-            <div className="tags-rating">
-              
+              <div className="tags-rating">
+                
+              </div>
             </div>
             <div className="container mt-5 justify-content-center d-flex">
               <Dropdown type={"Description"} text={appartment.description} />
