@@ -1,0 +1,16 @@
+.tags-list {
+  display: flex;
+  padding-left: unset;
+}
+
+.tag-item {
+  list-style: none;
+  margin-right: 0.5rem;
+  background-color: rgb(252, 71, 78);
+  color: #fff;
+  padding: 0.3rem;
+  width: 10rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}

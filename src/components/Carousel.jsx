@@ -7,11 +7,11 @@ function Carousel(props) {
 
   // define a state for the current active index (currentIndex) and the total item that passed to the Carousel (length)
 const [currentIndex, setCurrentIndex] = useState(0)
-const [length, setLength] = useState(children.length)
+const [length, setLength] = useState(children.pictures.length)
 
 // Set the length to match current children from props
 useEffect(() => {
-    setLength(children.length)
+    setLength(children.pictures.length)
 }, [children])
 // ...
 
@@ -43,7 +43,14 @@ const prev = () => {
             className="carousel-content mx-auto"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
-            {children}
+            {children.pictures.map((picture, index) => (
+              // console.log(picture),
+              <div className="image-txt-wraper" key={index}>
+                <img className="carousel-img" key={index} src={picture} />
+                <p className="carousel-img-number">{index+1}/{children.pictures.length}</p>
+              </div>
+               
+            ))}
           </div>
         </div>
         {/* condition to hide the control button when not needed */}
