@@ -1,27 +1,31 @@
-.appartment-header, .host-info {
-    color: rgb(252, 71, 78);
-  }
-  .host-info{
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
-  }
-  .host-profile-img {
-    border-radius: 50%;
-    margin-left: 1.5rem;
-  }
-  .tags-list {
-    display: flex;
-  }
-  .tag-item {
-    list-style: none;
-    margin: 0.5rem;
-    background-color: rgb(252, 71, 78);
-    color: #fff;
-    padding: 0.3rem;
-    width: 10rem;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
+.appartment-header,
+.host-info {
+  color: rgb(252, 71, 78);
+}
+.appartment-title {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.host-info {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+.host-profile-img {
+  border-radius: 50%;
+  margin-left: 1.5rem;
+}
+.tags-list {
+  display: flex;
+}
+.tag-item {
+  list-style: none;
+  margin: 0.5rem;
+  background-color: rgb(252, 71, 78);
+  color: #fff;
+  padding: 0.3rem;
+  width: 10rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}

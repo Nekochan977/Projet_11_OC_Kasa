@@ -27,7 +27,7 @@ function Appartment(){
           <section>
             <div>
               <div className="appartment-header">
-                <h1>{appartment.title}</h1>
+                <h1 className="appartment-title">{appartment.title}</h1>
                 <p>{appartment.location}</p>
               </div>
               <div className="host-info">
