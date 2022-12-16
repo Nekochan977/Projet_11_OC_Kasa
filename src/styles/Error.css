@@ -1,0 +1,30 @@
+*, a {
+    color: #FF6060;
+}
+
+.responsive{
+    position: relative;
+    max-width: 100%;
+}
+.my-container {
+    position: relative;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin: 2.5rem auto;
+    text-align: center;
+}
+
+
+.error-title {
+    font-weight: 700;
+    font-size: calc(5rem + 4.5vw);
+    line-height: 142.6%;
+}
+.my-container p {
+    font-weight: 500;
+    font-size: calc(1rem + 1.5vw);
+}
+
