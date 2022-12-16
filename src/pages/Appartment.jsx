@@ -6,7 +6,7 @@ import Carousel from "../components/Carousel"
 import Dropdown from "../components/Dropdown"
 import Tags from "../components/Tags"
 import "../styles/Appartment.css"
-import { Children } from "react"
+//import { Children } from "react"
 
 function Appartment(){
     const {appartmentId} = useParams()
@@ -28,17 +28,20 @@ function Appartment(){
               </div>
               
               <div className="host-info">
-                <div>
+                <div className="host-name">
                   <p>{appartment.host.name}</p>
+                  
                 </div>
                 <img
                   className="host-profile-img"
                   src={appartment.host.picture}
+                  alt={`${appartment.host.picture} profile`}
                 />
-              </div>
-              <div className="tags-rating">
+                <div className="tags-rating">
                 
+                </div>
               </div>
+              
             </div>
             <div className="container mt-5 justify-content-center d-flex">
               <Dropdown type={"Description"} text={appartment.description} />

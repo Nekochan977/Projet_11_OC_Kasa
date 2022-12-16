@@ -15,8 +15,15 @@
   font-size: 1.5rem;
 }
 .host-profile-img {
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
+  shape-outside: circle();
+}
+.host-name {
+  width: min-content;
+  padding-right: 0.5rem;
 }
 
 .appartment-info{
