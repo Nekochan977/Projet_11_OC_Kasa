@@ -18,3 +18,10 @@
     color: rgb(252, 71, 78);
     border-radius: 5px;
 }
+.fa-chevron-up,
+.fa-chevron-down {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    
+}

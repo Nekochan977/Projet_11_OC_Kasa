@@ -56,10 +56,10 @@
 .image-txt-wraper{
     position: relative;
 }
-.fa-solid{
+/* .fa-solid{
     color: #fff;
     font-size: 2.5rem;
-}
+} */
 .carousel-img-number {
     left: 50%;
     font-size: 2rem;
@@ -73,5 +73,10 @@
 
 .right-arrow {
     right: 24px;
+}
+.fa-chevron-left,
+.fa-chevron-right {
+    color: #fff;
+    font-size: 2.5rem;
 }
 /* ... */

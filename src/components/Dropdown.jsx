@@ -13,6 +13,9 @@ function DropDown(props) {
           onClick={handleOpen}
         >
          {props.type}
+         {open ? <i className="fa-solid fa-chevron-up"></i>
+        : <i className="fa-solid fa-chevron-down"></i>}
+         
         </button>
         {open ? <div className="dropdown-content">
           <p className="p-4 rounded">
