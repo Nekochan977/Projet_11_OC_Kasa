@@ -3,13 +3,14 @@ import data from "../utils/adds.json"
 import Carousel from "../components/Carousel"
 import Dropdown from "../components/Dropdown"
 import Tags from "../components/Tags"
+import Ratings from "../components/Ratings"
 import "../styles/Appartment.css"
 //import { Children } from "react"
 
 function Appartment(){
     const {appartmentId} = useParams()
     const appartment = data.find(appart => appart.id === appartmentId)
-    console.log(appartment)
+    //console.log(appartment)
     return (
       <div>
           <Carousel>
@@ -34,7 +35,7 @@ function Appartment(){
                   alt={`${appartment.host.picture} profile`}
                 />
                 <div className="tags-rating">
-                
+                  <Ratings>{appartment}</Ratings>
                 </div>
               </div>
               
