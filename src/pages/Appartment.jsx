@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom"
 import data from "../utils/adds.json"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 import Carousel from "../components/Carousel"
 import Dropdown from "../components/Dropdown"
 import Tags from "../components/Tags"
@@ -14,8 +12,6 @@ function Appartment(){
     console.log(appartment)
     return (
       <div>
-        <Header />
-        <main className="container">
           <Carousel>
             {appartment}
           </Carousel>
@@ -48,8 +44,6 @@ function Appartment(){
               <Dropdown type={"Équipements"} text={appartment.equipments} />
             </div>
           </section>
-        </main>
-        <Footer />
       </div>
     );
 }
