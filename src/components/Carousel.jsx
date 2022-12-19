@@ -19,25 +19,26 @@ useEffect(() => {
 const next = () => {
     if (currentIndex < (length - 1)) {
         setCurrentIndex(prevState => prevState + 1)
+    } else {
+      setCurrentIndex(0)
     }
 }
 
 const prev = () => {
     if (currentIndex > 0) {
         setCurrentIndex(prevState => prevState - 1)
+    } else {
+      setCurrentIndex(length - 1)
     }
 }
 // ...
   return (
     <div className="carousel-container">
       <div className="carousel-wrapper">
-      {/* condition to hide the control button when not needed */}
-        {currentIndex > 0 && (
-          <button onClick={prev} className="left-arrow">
-            <i className="fa-solid fa-chevron-left"></i>
-          </button>
-        )}
-       
+        <button onClick={prev} className="left-arrow">
+          <i className="fa-solid fa-chevron-left"></i>
+        </button>
+
         <div className="carousel-content-wrapper">
           <div
             className="carousel-content mx-auto"
@@ -47,19 +48,16 @@ const prev = () => {
               // console.log(picture),
               <div className="image-txt-wraper" key={index}>
                 <img className="carousel-img" key={index} src={picture} />
-                <p className="carousel-img-number">{index+1}/{children.pictures.length}</p>
+                <p className="carousel-img-number">
+                  {index + 1}/{children.pictures.length}
+                </p>
               </div>
-               
             ))}
           </div>
         </div>
-        {/* condition to hide the control button when not needed */}
-        {currentIndex < length - 1 && (
-          <button onClick={next} className="right-arrow">
-            <i className="fa-solid fa-chevron-right"></i>
-          </button>
-        )}
-       
+        <button onClick={next} className="right-arrow">
+          <i className="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
     </div>
   );
