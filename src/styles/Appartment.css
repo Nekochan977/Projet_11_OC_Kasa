@@ -6,12 +6,13 @@
   margin-top: 1rem;
   font-size: 2rem;
 }
+.appartment-info,
 .host-info {
-  /* justify-content: flex-end; */
   display: flex;
+}
+.host-info {
   align-items: center;
   position: relative;
-  margin-left: auto;
   font-size: 1.5rem;
 }
 .host-profile-img {
@@ -29,5 +30,12 @@
 .appartment-info{
   position: relative;
   margin-left: auto;
-  display: flex;
+  flex-wrap: wrap;
+}
+.tags-rating {
+  margin: auto 0;
+}
+.host-rating {
+  margin-left: auto;
+  margin-top: 1rem;
 }
