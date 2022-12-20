@@ -8,6 +8,7 @@ function Home () {
           <Banner
             source={homeBg}
             altText="côtes rocheuses en bord de mer un jour de brouillard"
+            title="Chez vous, partout et ailleurs"
           />
           <CardLink />
       </div>
