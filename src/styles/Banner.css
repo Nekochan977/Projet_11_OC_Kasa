@@ -6,6 +6,7 @@
     object-fit: cover;
     object-position: center;
     position: relative;
+    max-width: 1320px;
 }
 .banner-image {
    height: 15rem;
