@@ -39,3 +39,18 @@
   margin-left: auto;
   margin-top: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .host-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .host-info {
+    margin: auto;
+  }
+  .tags-rating {
+    margin: auto;
+  }
+}
