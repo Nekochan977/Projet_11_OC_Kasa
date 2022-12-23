@@ -1,5 +1,4 @@
-import { useEffect } from "react"
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import data from "../utils/adds.json"
 import Carousel from "../components/Carousel"
 import Dropdown from "../components/Dropdown"
@@ -10,19 +9,12 @@ import "../styles/Appartment.css"
 
 function Appartment() {
   const { appartmentId } = useParams();
-  const navigate = useNavigate()
-  // TODO:: asynchrone => fetch 
   const appartment = data.find(appart => appart.id === appartmentId)
-  console.log(appartment)
+  //console.log(appartment)
 
-  useEffect(() => {
-    if (!appartment) {
-      navigate('/not-found')
-    }
-    // eslint-disable-next-line
-  }, [appartment])
-
-
+  if(appartment === undefined){
+    return <Navigate to="/Not-found"/>
+}
   return (
     <div>
       <Carousel>{appartment}</Carousel>
