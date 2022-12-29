@@ -4,14 +4,14 @@ import { Link } from "react-router-dom"
 
 function Header() {
   return (
-    <header className="container">
-      <div className="d-flex align-items-center container-fluid position-relative my-2">
-        <div className="my-4 w-50 justify-content-start">
+    <header className="main-container">
+      <div className="logo-nav-wrapper">
+        <div className="logo-container">
           <img className="logo" src={logo} alt="kasa logo" />
         </div>
-        <nav className="navbar position-absolute end-0 justify-content-end w-50">
-          <ul className="d-flex navigation">
-            <li className="mx-2">
+        <nav className="navbar">
+          <ul className="navigation">
+            <li className="navigation-link">
             <Link className="link" to="/">accueil</Link>
             </li>
             <li className="mx-2">
