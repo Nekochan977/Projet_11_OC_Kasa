@@ -12,13 +12,13 @@ function CardLink() {
               to={`/appartment/${data.id}`}
               key={data.id}
             >
-              <div className="rounded bg-red-200 m-4 position-relative cover-card ">
+              <div className="cover-card ">
                 <img
                   className="thumbnail"
                   src={data.cover}
                   alt={data.title}
                 />
-                <p className="position-absolute bottom-0 text-white font-weight-bold card-text p-2">
+                <p className="card-text">
                   {data.title}
                 </p>
               </div>
