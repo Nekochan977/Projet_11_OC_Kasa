@@ -4,7 +4,7 @@
 }
 .appartment-title {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .appartment-info,
 .host-info {
@@ -32,12 +32,13 @@
   margin-left: auto;
   flex-wrap: wrap;
 }
-.tags-rating {
-  margin: auto 0;
-}
+
 .host-rating {
   margin-left: auto;
   margin-top: 1rem;
+}
+.tags-rating {
+  margin: auto 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -48,9 +49,6 @@
     width: 100%;
   }
   .host-info {
-    margin: auto;
-  }
-  .tags-rating {
     margin: auto;
   }
 }

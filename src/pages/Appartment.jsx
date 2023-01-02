@@ -19,7 +19,7 @@ function Appartment() {
     <div>
       <Carousel>{appartment}</Carousel>
       <section>
-        <div className="appartment-info">
+        <div className="appartment-info main-container">
           <div className="appartment-header">
             <h1 className="appartment-title">{appartment.title}</h1>
             <p>{appartment.location}</p>
@@ -42,7 +42,7 @@ function Appartment() {
             </div>
           </div>
         </div>
-        <div className="container mt-5 justify-content-center d-flex">
+        <div className="main-container dropdown equipment-dropdown">
           <Dropdown type={"Description"} text={appartment.description} />
           <Dropdown type={"Équipements"} text={appartment.equipments} />
         </div>
