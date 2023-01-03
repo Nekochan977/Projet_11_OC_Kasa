@@ -1,10 +1,17 @@
+.appartment{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .appartment-header,
 .host-info {
   color: rgb(252, 71, 78);
 }
 .appartment-title {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: calc(15px + 2vmin);
 }
 .appartment-info,
 .host-info {
@@ -41,14 +48,11 @@
   margin: auto 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 905px) {
   .host-rating {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
-  }
-  .host-info {
-    margin: auto;
   }
 }

@@ -16,10 +16,10 @@ function Appartment() {
     return <Navigate to="/Not-found"/>
 }
   return (
-    <div>
+    <div className="appartment">
       <Carousel>{appartment}</Carousel>
       <section>
-        <div className="appartment-info main-container">
+        <div className="appartment-info">
           <div className="appartment-header">
             <h1 className="appartment-title">{appartment.title}</h1>
             <p>{appartment.location}</p>
