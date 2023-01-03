@@ -41,8 +41,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-   
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    font-size: 1.2rem;
 }
 .navigation {
     list-style: none;
@@ -64,4 +64,10 @@
 .link:hover {
     text-decoration: underline;
     color: rgb(252, 71, 78);
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        font-size: 0.8rem;
+    }
 }
