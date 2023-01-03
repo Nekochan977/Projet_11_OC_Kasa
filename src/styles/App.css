@@ -46,3 +46,7 @@
   max-width: 1320px;
   /* justify-content: center; */
 }
+.global {
+  width: 90%;
+  margin: auto;
+}

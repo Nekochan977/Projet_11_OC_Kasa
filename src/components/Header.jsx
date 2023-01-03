@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 function Header() {
   return (
-    <header className="main-container">
+    <header className="main-container global">
       <div className="logo-nav-wrapper">
         <div className="logo-container">
           <img className="logo" src={logo} alt="kasa logo" />
