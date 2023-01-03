@@ -15,8 +15,8 @@
 }
 
 .thumbnail {
-    max-width: 20rem;
-    min-height: 20rem;
+    max-width: 18rem;
+    min-height: 18rem;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -29,8 +29,8 @@
     --bs-gutter-y: 0;
     --bs-gutter: 1.5rem;
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: 10px;
     object-fit: contain;
     margin: calc(var(--bs-gutter) * 2);
@@ -51,5 +51,11 @@
     top: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+@media only screen and (max-width: 600px){
+    .card-wrapper {
+        background-color: unset;
+    }
 }
 
