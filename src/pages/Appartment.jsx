@@ -42,7 +42,7 @@ function Appartment() {
             </div>
           </div>
         </div>
-        <div className="main-container dropdown equipment-dropdown">
+        <div className="main-container dropdown appartment-dropdown">
           <Dropdown type={"Description"} text={appartment.description} />
           <Dropdown type={"Équipements"} text={appartment.equipments} />
         </div>
