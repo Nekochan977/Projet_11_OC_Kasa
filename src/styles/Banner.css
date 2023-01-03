@@ -1,18 +1,19 @@
-
-
 .banner-container {
-    --bs-gutter-x: 1.5rem;
-    height: 15rem;
-    object-fit: cover;
     object-position: center;
     position: relative;
     max-width: 1320px;
 }
 .banner-image {
-   height: 15rem;
    width: 100%;
-   object-fit: cover;
-   border-radius: 25px;
+}
+.banner-container,
+.banner-image{
+    height: 15rem;
+    object-fit: cover;
+}
+.banner-container::after,
+.banner-image{
+    border-radius: 25px;
 }
 .banner-container::after {
     content: '';
@@ -22,7 +23,7 @@
     top: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    border-radius: 25px;
+    
 }
 .banner-title {
     position: absolute;
