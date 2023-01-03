@@ -53,13 +53,10 @@
     border: none;
     background-color: transparent;
 }
+
 .image-txt-wraper{
     position: relative;
 }
-/* .fa-solid{
-    color: #fff;
-    font-size: 2.5rem;
-} */
 .carousel-img-number {
     left: 50%;
     font-size: 2rem;
@@ -79,4 +76,18 @@
     color: #fff;
     font-size: 2.5rem;
 }
-/* ... */
+
+
+/* media screen */
+
+@media only screen and (max-width: 600px){
+    .left-arrow, .right-arrow{
+        width: 23px;
+    }
+    .left-arrow{
+        left: 0;
+    }
+    .right-arrow{
+        right: 0;
+    }
+}
