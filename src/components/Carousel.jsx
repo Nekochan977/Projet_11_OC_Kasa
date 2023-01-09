@@ -41,11 +41,10 @@ const prev = () => {
 
         <div className="carousel-content-wrapper">
           <div
-            className="carousel-content mx-auto"
+            className="carousel-content"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {children.pictures.map((picture, index) => (
-              // console.log(picture),
               <div className="image-txt-wraper" key={index}>
                 <img className="carousel-img" key={index} src={picture} />
                 <p className="carousel-img-number">
