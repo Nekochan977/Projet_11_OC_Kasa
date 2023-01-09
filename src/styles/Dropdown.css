@@ -56,7 +56,8 @@
         width: unset;
     }
     .dropdown-btn {
-        min-width: 18rem;
+        min-width: 15rem;
+        max-width: 18rem;
         margin: 0 auto;
     }
   }

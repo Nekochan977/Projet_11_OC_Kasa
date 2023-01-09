@@ -68,6 +68,9 @@
 
 @media only screen and (max-width: 600px) {
     .navbar{
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+    }
+    .navigation{
+        width: max-content;
     }
 }
