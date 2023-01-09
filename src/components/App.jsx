@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path={HOME} element={<Layout />}>
+        <Route path={HOME} element={<Layout />}> // adds the layout on all pages
           <Route index element={<Home />} />
-          <Route path={ABOUT} element={<About />} />
+          <Route path={ABOUT} element={<About />} /> // path for when an appatment URL matches this segment
           <Route path="appartment/:appartmentId" element={<Appartment />} />
           <Route path="*" element={<Error />} />
         </Route>
