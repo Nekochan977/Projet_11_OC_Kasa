@@ -73,13 +73,10 @@
 /* media screen */
 
 @media only screen and (max-width: 600px){
-    .left-arrow, .right-arrow{
-        width: 23px;
-    }
     .left-arrow{
         left: 0;
     }
     .right-arrow{
-        right: 17px;
+        right: 0;
     }
 }

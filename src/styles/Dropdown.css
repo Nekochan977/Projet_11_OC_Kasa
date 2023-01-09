@@ -24,7 +24,6 @@
     border-radius: 5px;
     position: relative;
     padding: 0.5rem;
-    /* min-width: 30rem; */
     width: auto;
 }
 .dropdown-content {
@@ -55,12 +54,11 @@
     .appartment-dropdown>.dropdown-container{
         width: unset;
     }
-    .dropdown-btn {
+    .dropdown-btn{
         min-width: 15rem;
-        max-width: 18rem;
-        margin: 0 auto;
     }
   }
+  
   @media only screen and (max-width: 1015px) {
     .appartment-dropdown{
         flex-wrap: wrap;
