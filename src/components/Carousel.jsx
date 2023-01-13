@@ -46,7 +46,7 @@ const prev = () => {
           >
             {children.pictures.map((picture, index) => (
               <div className="image-txt-wraper" key={index}>
-                <img className="carousel-img" key={index} src={picture} />
+                <img className="carousel-img" key={index} src={picture} alt={picture.slice(88, -4)} />
                 <p className="carousel-img-number">
                   {index + 1}/{children.pictures.length}
                 </p>

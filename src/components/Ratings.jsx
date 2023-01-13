@@ -7,7 +7,7 @@ function Ratings(props) {
     return(
         <div className="appartment-rating">
             {ratingRange.map((star)=>(
-                star<=children.rating ? <img key={`${children.id} - ${star}`} src={fullstar} /> : <img key={`${children.id} - ${star}`} src={emptystar} /> 
+                star<=children.rating ? <img key={`${children.id} - ${star}`} src={fullstar} alt="full star icon" /> : <img key={`${children.id} - ${star}`} src={emptystar} alt="empty star icon"  /> 
             ))}
         </div>
     )
