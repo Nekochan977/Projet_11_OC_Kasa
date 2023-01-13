@@ -10,7 +10,6 @@ import "../styles/Appartment.css"
 function Appartment() {
   const { appartmentId } = useParams();
   const appartment = data.find(appart => appart.id === appartmentId)
-  //console.log(appartment)
 
   if(appartment === undefined){
     return <Navigate to="/Not-found"/>
