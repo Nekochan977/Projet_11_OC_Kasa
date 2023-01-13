@@ -25,6 +25,7 @@
     position: relative;
     padding: 0.5rem;
     width: auto;
+    font-size: 1rem;
 }
 .dropdown-content {
     color: rgb(252, 71, 78);
@@ -39,7 +40,6 @@
 .fa-chevron-up,
 .fa-chevron-down {
     color: #fff;
-    font-size: 1rem;
     padding: 0 0.5rem;
     position: absolute;
     right: 0;
