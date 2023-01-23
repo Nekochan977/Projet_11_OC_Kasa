@@ -6,7 +6,7 @@ function Banner(props) {
         
         <div className=" banner-container cover-banner">
             <img className="banner-image" src={props.source} alt={props.altText}/>
-            <h1 className="banner-title">{props.title}</h1>
+            {!props.title? "": <h1 className="banner-title">{props.title}</h1>}
         </div>
 
     )
