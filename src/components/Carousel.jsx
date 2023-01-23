@@ -35,9 +35,13 @@ const prev = () => {
   return (
     <div className="carousel-container">
       <div className="carousel-wrapper">
-        <button onClick={prev} className="left-arrow">
-          <i className="fa-solid fa-chevron-left"></i>
-        </button>
+        {length <= 1 ? (
+          ""
+        ) : (
+          <button onClick={prev} className="left-arrow">
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
+        )}
 
         <div className="carousel-content-wrapper">
           <div
@@ -46,7 +50,12 @@ const prev = () => {
           >
             {children.pictures.map((picture, index) => (
               <div className="image-txt-wraper" key={index}>
-                <img className="carousel-img" key={index} src={picture} alt={picture.slice(88, -4)} />
+                <img
+                  className="carousel-img"
+                  key={index}
+                  src={picture}
+                  alt={picture.slice(88, -4)}
+                />
                 <p className="carousel-img-number">
                   {index + 1}/{children.pictures.length}
                 </p>
@@ -54,9 +63,13 @@ const prev = () => {
             ))}
           </div>
         </div>
-        <button onClick={next} className="right-arrow">
-          <i className="fa-solid fa-chevron-right"></i>
-        </button>
+        {length <= 1 ? (
+          ""
+        ) : (
+          <button onClick={next} className="right-arrow">
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
+        )}
       </div>
     </div>
   );
