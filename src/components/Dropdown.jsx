@@ -8,24 +8,35 @@ function DropDown(props) {
       }
     return (
       <div className="dropdown-container">
-        <button
-          className="dropdown-btn"
-          onClick={handleOpen}
-        >
-         {props.type}
-         {open ? <i className="fa-solid fa-chevron-up"></i>
-        : <i className="fa-solid fa-chevron-down"></i>}
-         
+        <button className="dropdown-btn" onClick={handleOpen}>
+          {props.type}
+          {open ? (
+            <i className="fa-solid fa-chevron-up"></i>
+          ) : (
+            <i className="fa-solid fa-chevron-down"></i>
+          )}
         </button>
-        {open ? <div className="dropdown-content active">
-          <p className="dropdown-text">
-            {props.text}
-          </p>
-        </div>
-        : ""}
-        
+        {open ? (
+          <div className="dropdown-content active">
+            {typeof props.text === "object" ? (
+              <ul className="equipmentList">
+                {props.text.map((text, i) => {
+                  return (
+                    <li className="equipmentItem" key={text + i}>
+                      {text}
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : (
+              <p className="dropdown-text">{props.text}</p>
+            )}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
-    )
+    );
 }
 
 export default DropDown

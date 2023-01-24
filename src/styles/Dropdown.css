@@ -34,8 +34,12 @@
 .active{
     background-color: #F7F7F7;
 }
-.dropdown-text {
+.dropdown-text, .equipmentList {
     padding: 0.5rem; 
+}
+.equipmentItem{
+    line-height: 25.67px;
+    list-style: none;
 }
 .fa-chevron-up,
 .fa-chevron-down {
