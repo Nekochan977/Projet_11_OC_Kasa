@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 function Layout() {
     return(
-        <div>
+        <div className="content">
             <Header/>
-            <main className="main-container global">                
+            <main className="main-container global main">                
                 <Outlet />
             </main>
             <Footer />
