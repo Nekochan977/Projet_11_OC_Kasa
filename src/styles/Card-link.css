@@ -56,6 +56,16 @@
 @media only screen and (max-width: 600px){
     .card-wrapper {
         background-color: unset;
+        padding: unset;
+    }
+    .cover-card{
+        height: unset;
+        width: unset;
+        margin-bottom: 1rem;
+        --bs-gutter: unset;
+    }
+    .thumbnail {
+        max-width: unset;
     }
 }
 

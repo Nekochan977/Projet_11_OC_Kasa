@@ -79,4 +79,7 @@
     .right-arrow{
         right: 0;
     }
+    .carousel-content-wrapper, .carousel-img{
+        height: 15rem;
+    }
 }

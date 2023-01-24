@@ -7,7 +7,9 @@ function Header() {
     <header className="main-container global">
       <div className="logo-nav-wrapper">
         <div className="logo-container">
-          <img className="logo" src={logo} alt="kasa logo" />
+          <Link className="link" to="/">
+            <img className="logo" src={logo} alt="kasa logo" />
+          </Link>
         </div>
         <nav className="navbar">
           <ul className="navigation">

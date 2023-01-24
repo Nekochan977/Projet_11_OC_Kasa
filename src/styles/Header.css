@@ -73,4 +73,7 @@
     .navigation{
         width: max-content;
     }
+    .logo {
+        width: 50%;
+    }
 }

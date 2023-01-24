@@ -56,10 +56,10 @@
         justify-content: center;
     }
     .appartment-dropdown>.dropdown-container{
-        width: unset;
+        width: 100%;
     }
-    .dropdown-btn{
-        min-width: 18rem;
+    .dropdown-btn, .active{
+        width: 100%;
     }
   }
   

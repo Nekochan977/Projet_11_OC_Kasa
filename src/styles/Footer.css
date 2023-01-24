@@ -7,6 +7,8 @@
     justify-content: center;
     background-color: #000000;
     margin-top: 2rem;
+    position: absolute;
+    bottom: -24;
 }
 .footer-logo{
     margin: 1rem;
